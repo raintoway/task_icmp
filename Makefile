@@ -1,4 +1,4 @@
-all: clean ping
+all: ping clean 
 
 ping:
 	gcc p.c -o ping.exe -lm
