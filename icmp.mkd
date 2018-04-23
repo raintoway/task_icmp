@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="icmp/html; charset=utf-8">
+# icmp现实类似于ping功能
+1. 将ip地址转换成网络字节序
+2. 设置报头
+3. 检验校验和（算法是网上的）
+[网站](https://blog.csdn.net/wswit/article/details/46822189)
+4. 发送报文 通过icmp头文件里的sendto来实现
+5. 接受报文 通过icmp头文件的recev来实现
+6.打印总信息（ttl rtt 丢包率之类的）
+
+两张图片
+
+![ip icmp 报头形式](./ip icmp报头.jpg)
+![大致流程](./大致流程.jpg)

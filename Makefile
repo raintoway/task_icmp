@@ -1,9 +1,9 @@
-all: ping clean 
+all: ping 
 
 ping:
-	gcc p.c -o ping.exe -lm
-	sudo su
-	make clean
+	gcc ping.c -o ping.exe -lm
+	./ping.exe www.baidu.com
+	markdown -o icmp.html icmp.mkd
 clean:
 	rm ping.exe
 
